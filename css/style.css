@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+#header {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+} 
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	color: #222;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+/****************************************************************************/
+/******************************** Pre-navbar ********************************/
+/****************************************************************************/
+
+#pre-nav {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	padding: .2rem;
+}
+
+#pre-nav-contact {
+	margin: -7px;
+	padding: .8rem;
+}
+
+#register-btn {
+	display: inline-block;
+	margin-top: -7px;
+	margin-right: 20px;
+	padding: .8rem;
+	border-radius: 18px;
+}
+
+.pre-nav-social {
+	display: inline-block;
+	padding: .8rem;
+}
+
+.pre-nav-social a {
+	margin-left: .2rem;
+}
+
+/****************************************************************************/
+/********************************** Navbar **********************************/
+/****************************************************************************/
+
+.navbar {
+	padding: 50px 0;
+}
+
+.navbar-brand {
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+.navbar-dark .navbar-brand {
+	color: #dcdde1;
+}
+
+.nav-item {
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+	background: #dcdde1;
+	color: #262626;
+}
+
+/****************************************************************************/
+/*********************************** Main ***********************************/
+/****************************************************************************/
+
+.main {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background13-flip.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	padding: 220px 0 200px;
+    background-attachment: fixed;
+}
+
+.main h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.6em;
+	color: #dcdde1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.main p {
+	margin-top: 1em;
+	padding: 0;
+	font-size: 1em;
+	color: #dcdde1;
+}
+
+/***************************************************************************/
+/********************************* Sliders *********************************/
+/***************************************************************************/
+
+.welcome {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.welcome hr {
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.carousel-inner img {
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-caption h2 {
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #000;
+	padding-bottom: 1rem;
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.btn-primary {
+	background-color: #ADE75F;
+	border: 1px solid #ADE75F;
+}
+
+.btn-primary:hover {
+	background-color: #71D002;
+	border: 1px solid #71D002;
+}
+
+.slider-section.padding {
+	padding-bottom: 2rem;
+}
+
+/***************************************************************************/
+/****************************** Feature Cards ******************************/
+/***************************************************************************/
+
+.feature-cards .container {
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+.feature-cards a {
+	text-decoration: none !important;
+}
+
+.feature-cards .card-title {
+	color: #ADE75F;
+}
+
+.inner {
+	overflow: hidden;
+}
+
+.inner img {
+	transition: all 0.3s ease-in-out;
+	opacity: 1;
+}
+
+.inner:hover img {
+	opacity:0.5;
+}
+
+/****************************************************************************/
+/***************************** Mission & Vision *****************************/
+/****************************************************************************/
+
+mission-vision container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mission-vision h3 {
+	text-transform: uppercase;
+	margin-top: 20px;
+    font-size: 1.5em;
+	text-align: center;
+}
+
+.mission-vision p {
+    font-size: 1em;
+    line-height: 1em;
+	text-align-last: center;
+}
+
+.mission-vision .card {
+	width: 100%;
+	height: 100%;
+}
+
+.mission-vision .card-group a {
+	text-decoration: none !important;
+}
+
+.mission-vision .card-title, .card-text {
+	color: white;
+}
+
+.mission-vision hr.card-line {
+	border-top: 4px solid;
+	width: 120px;
+	margin: 30px auto;
+	color: #ADE75F;
+}
+
+.mission-vision .card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.mission-vision .card-img {
+  width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-position: center;
+  background-size: cover;
+  transition:all 0.3s ease-in-out;
+  opacity:1;
+}
+
+.mission-vision .card:hover .card-img,
+.mission-vision .card:focus .card-img {
+	opacity:0.5;
+}
+
+/****************************************************************************/
+/********************************** Footer **********************************/
+/****************************************************************************/
+
+footer {
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+footer a {
+	color: #d5d5d5;
+}
+
+hr.light-100 {
+	border-top: 1px solid #d5d5d5;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+footer .padding {
+	padding-bottom: .8rem;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
