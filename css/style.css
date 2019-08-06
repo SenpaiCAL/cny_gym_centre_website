@@ -29,7 +29,8 @@ html, body {
 	font-size: .9rem;
 	letter-spacing: .1rem;
 	padding: .2rem;
-	background-color: rgba(255, 255, 255, 0.70);
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 #pre-nav-contact {
@@ -281,7 +282,7 @@ html, body {
 /***************************** Mission & Vision *****************************/
 /****************************************************************************/
 
-mission-vision container-fluid {
+.mission-vision container-fluid {
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -344,6 +345,171 @@ mission-vision container-fluid {
 
 
 
+
+
+/***************************************************************************/
+/********************************** Staff **********************************/
+/***************************************************************************/
+
+.main-staff {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background14.jpg);
+	min-height: 80vh;
+	background-size: cover;
+	background-position: center;
+	padding: 320px 0 200px;
+    background-attachment: fixed;
+}
+
+.main-staff h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.6em;
+	color: #dcdde1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.staff-section {
+    background: #eee !important;
+}
+
+.staff-section h4 {
+	color: black;
+}
+
+.staff-section p {
+	color: black;
+}
+
+.staff-section .btn-primary:hover,
+.btn-primary:focus {
+    background-color: #71D002;
+    border-color: #71D002;
+    box-shadow: none;
+    outline: none;
+}
+
+.staff-section .btn-primary {
+    color: #fff;
+    background-color: #71D002;
+    border-color: #71D002;
+}
+
+.staff-section {
+    padding: 60px 0;
+}
+
+.staff-section .section-title {
+    text-align: center;
+    color: #71D002;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.staff-section .card {
+    border: none;
+    background: #ffffff;
+}
+
+.staff-section .image-flip:hover .backside,
+.staff-section .image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.staff-section .image-flip:hover .frontside,
+.staff-section .image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.staff-section .mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.staff-section .frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.staff-section .backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.staff-section .frontside,
+.staff-section .backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.staff-section .frontside .card,
+.staff-section .backside .card {
+    min-height: 312px;
+}
+
+.staff-section .backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.staff-section .frontside .card .card-title,
+.staff-section .backside .card .card-title {
+    color: #71D002 !important;
+}
+
+.staff-section .frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+
 /****************************************************************************/
 /********************************** Footer **********************************/
 /****************************************************************************/
@@ -356,13 +522,19 @@ footer {
 
 hr.light {
 	border-top: 1px solid #d5d5d5;
-	width: 75%;
+	width: 80%;
 	margin-top: .8rem;
 	margin-bottom: 1rem;
 }
 
 footer a {
 	color: #d5d5d5;
+	text-decoration: none;
+	transition: .2s all;
+}
+
+footer ul li {
+	margin-bottom: 10px;
 }
 
 hr.light-100 {
@@ -373,6 +545,15 @@ hr.light-100 {
 
 footer .padding {
 	padding-bottom: .8rem;
+}
+
+.list-unstyled {
+	list-style: none;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #71D002;
 }
 
 /*--- Bootstrap Padding Fix --*/
