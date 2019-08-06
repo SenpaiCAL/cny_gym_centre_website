@@ -1,390 +1,270 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
-#header {
-	position: absolute;
-	z-index: 10;
-	width: 100%;
-} 
-
-html, body {
-	height: 100%;
-	width: 100%;
-	font-family: 'Poppins', sans-serif;
-	color: #222;
-}
-
-.container-fluid {
-	padding: 0px;
-}
-
-/****************************************************************************/
-/******************************** Pre-navbar ********************************/
-/****************************************************************************/
-
-#pre-nav {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: .9rem;
-	letter-spacing: .1rem;
-	padding: .2rem;
-	background-color: rgba(255, 255, 255, 0.70);
-}
-
-#pre-nav-contact {
-	margin: -7px;
-	padding: .8rem;
-}
-
-#register-btn {
-	display: inline-block;
-	margin-top: -7px;
-	margin-right: 20px;
-	padding: .8rem;
-	border-radius: 18px;
-}
-
-.pre-nav-social {
-	display: inline-block;
-	padding: .8rem;
-}
-
-.pre-nav-social a {
-	margin-left: .2rem;
-}
-
-.social a {
-	font-size: 4.5em;
-}
-
-.fa-facebook {
-	color: #3b5998;
-}
-
-.fa-twitter {
-	color: #00aced;
-}
-
-.fa-instagram {
-	color: #517fa4;
-}
-
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-instagram:hover {
-	color: #d5d5d5;
-}
-
-/****************************************************************************/
-/********************************** Navbar **********************************/
-/****************************************************************************/
-
-.navbar {
-	padding: 80px 0;
-}
-
-.navbar-brand {
-	font-weight: 600;
-	font-size: 1.5em;
-}
-
-.navbar-dark .navbar-brand {
-	color: #dcdde1;
-}
-
-.nav-item {
-	font-weight: 600;
-	text-transform: uppercase;
-	padding-left: 10px;
-}
-
-.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-	background: #dcdde1;
-	color: #262626;
-}
-
-/****************************************************************************/
-/*********************************** Main ***********************************/
-/****************************************************************************/
-
-.main {
-	position: relative;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background13-flip.jpg);
-	min-height: 100vh;
-	background-size: cover;
-	background-position: center;
-	padding: 220px 0 200px;
-    background-attachment: fixed;
-}
-
-.main h2 {
-	margin: 0;
-	padding: 0;
-	font-size: 2.6em;
-	color: #dcdde1;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.main p {
-	margin-top: 1em;
-	padding: 0;
-	font-size: 1em;
-	color: #dcdde1;
-}
-
-/***************************************************************************/
-/********************************* Sliders *********************************/
-/***************************************************************************/
-
-.carousel-inner img {
-	height: 100%;
-	width: 100%;
-}
-
-.carousel-caption {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.carousel-caption h2 {
-	font-size: 500%;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 15px #000;
-}
-
-.carousel-caption h3 {
-	font-size: 200%;
-	font-weight: 500;
-	text-shadow: 1px 1px 10px #000;
-	padding-bottom: 1rem;
-}
-
-.carousel-item:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.6);
-}
-
-.btn-primary {
-	background-color: #ADE75F;
-	border: 1px solid #ADE75F;
-}
-
-.btn-primary:hover {
-	background-color: #71D002;
-	border: 1px solid #71D002;
-}
-
-.slider-section.padding {
-	padding-bottom: 2rem;
-}
-
-
-/****************************************************************************/
-/***************************** Features Section *****************************/
-/****************************************************************************/
-
-.welcome {
-	width: 75%;
-	margin: 0 auto;
-	padding-top: 2rem;
-}
-
-.welcome hr {
-	border-top: 2px solid #b4b4b4;
-	width: 95%;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-}
-
-.welcome h1 {
-	color: #71D002;
-	text-transform: uppercase;
-}
-
-.features-section {
-	padding-bottom: 60px;
-	padding-top: 60px;
-}
-
-.features-section .heading {
-	margin-bottom: 50px;
-	text-align: center;
-}
-
-.features-section .heading h1 {
-	color: #71D002;
-	font-weight: 900;
-	font-size: 1.7rem;
-	text-transform: uppercase;
-}
-
-.features-section hr {
-	border-top: 2px solid #b4b4b4;
-	width: 80%;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-}
-
-.features-section h5 {
-	color: #ADE75F;
-	font-size: 17px;
-	font-weight: bold;
-}
-
-.features-section .card {
-	transition: 0.4s ease;
-}
-
-.features-section.card img {
-	box-shadow: 6px 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-.features-section .card-body {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	padding: .8em 0;
-	background-color: rgba(15, 15, 15, .6);
-	text-align: center;
-}
-
-.features-section a {
-	color: #212529;
-}
-
-.features-section a:hover {
-	text-decoration: none;
-}
-
-.features-section .card {
-	margin-bottom: 30px;
-	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
-}
-
-@media (min-width:576px) {
-	.features-section .transform-on-hover:hover {
-		opacity: .6;
-		box-shadow: 0px 10px 10px rgba(0,0,0,0.15) !important;
-	}
-}
-
-/****************************************************************************/
-/***************************** Mission & Vision *****************************/
-/****************************************************************************/
-
-mission-vision container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.mission-vision h3 {
-	text-transform: uppercase;
-	margin-top: 20px;
-    font-size: 1.5em;
-	text-align: center;
-}
-
-.mission-vision p {
-    font-size: 1em;
-    line-height: 1em;
-	text-align-last: center;
-}
-
-.mission-vision .card {
-	width: 100%;
-	height: 100%;
-}
-
-.mission-vision .card-group a {
-	text-decoration: none !important;
-}
-
-.mission-vision .card-title, .card-text {
-	color: white;
-}
-
-.mission-vision hr.card-line {
-	border-top: 4px solid;
-	width: 120px;
-	margin: 30px auto;
-	color: #ADE75F;
-}
-
-.mission-vision .card-img-overlay {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.mission-vision .card-img {
-  width: 100%;
-  height: 100%;
-  background-color: black; /* fallback color */
-  background-position: center;
-  background-size: cover;
-  transition:all 0.3s ease-in-out;
-  opacity:1;
-}
-
-.mission-vision .card:hover .card-img,
-.mission-vision .card:focus .card-img {
-	opacity:0.5;
-}
-
-/****************************************************************************/
-/********************************* Calendar *********************************/
-/****************************************************************************/
-
-
-
-/****************************************************************************/
-/********************************** Footer **********************************/
-/****************************************************************************/
-
-footer {
-	background-color: #3f3f3f;
-	color: #d5d5d5;
-	padding-top: 2rem;
-}
-
-hr.light {
-	border-top: 1px solid #d5d5d5;
-	width: 75%;
-	margin-top: .8rem;
-	margin-bottom: 1rem;
-}
-
-footer a {
-	color: #d5d5d5;
-}
-
-hr.light-100 {
-	border-top: 1px solid #d5d5d5;
-	margin-top: .8rem;
-	margin-bottom: 1rem;
-}
-
-footer .padding {
-	padding-bottom: .8rem;
-}
-
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CNY Gymnastics Centre</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!---- Pre Nav ---->
+<section class="pre-nav">
+	<div class="container">
+	<nav class="navbar fixed-top" id="pre-nav">
+		<p id="pre-nav-contact">Call us: 123.456.7890</p>
+		<form class="form-inline">
+			<button class="btn btn-outline-success my-2 my-sm-0 id="register-btn type="submit">Register Now!</button>
+			<span class="pre-nav-social">Find Us On: 
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</span>
+		</form>
+	</nav>
+	</div>
+</section>
+
+<!----- Landing Page ----->
+<section id="header">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a href="index.html" class="navbar-brand">
+					<img src="css/img/Logo/logo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSuportedContent" aria-expand="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item active">
+							<a href="#" class="nav-link">Classes</a>
+						</li>
+						<li class="nav-item active">
+							<a href="#" class="nav-link">Birthdays</a>
+						</li>
+						<li class="nav-item active">
+							<a href="schedule.html" class="nav-link">Schedule</a>
+						</li>
+						<li class="nav-item active">
+							<a href="staff.html" class="nav-link">Staff</a>
+						</li>
+						<li class="nav-item active">
+							<a href="#" class="nav-link">Upcoming Events</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</section>
+	
+<section class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Welcome to CNY Gym Centre of DeWitt and Clay, NY!</h2>
+				<p>We offer gymnastics classes for boys and girls ages 6 months to 18 years. We coach competitive gymnastics team levels 2 - 10 and Xcel. CNY Gym Centre also offers Funtastic birthday parties, school vacation and summer camps,ninja classes, back handspring and tumbling clinics. We offer month-to-month tuition, providing convenient scheduling. A safe gymnastics environment is our priority, with team coaches who are trained and accredited, with background checks, and ongoing training for certification. Our staff includes knowledgeable ex-gymnasts. Be sure to check out our Ninja Warrior Training, gymnastics-influenced training for boys and girls, offered only at our ShoppingTown location.</p>
+				<br>
+				<a href="#" class="btn btn-primary btn-lg">Read More</a>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<!---- Features Section ---->
+<section class="features-section cards-gallery">
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4 strong">Begin Here, Go Anywhere</h1>
+				<hr>
+				<div class="col-12">
+					<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-lg-4">
+				<div class="card border-0 transform-on-hover">
+					<a href="#">
+						<img src="css/img/background2.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5>Gymnastics Classes</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="card border-0 transform-on-hover">
+					<a href="#">
+						<img src="css/img/background3.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5>Birthday Parties</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="card border-0 transform-on-hover">
+					<a href="#">
+						<img src="css/img/background4.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5>Youth Camps</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!---- Mission and Vision Card Group---->
+<section class="mission-vision">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="card-group">
+					<div class="card">
+						<a href="#">
+    						<img src="css/img/mission.jpg" class="card-img" alt="Mission">
+    						<div class="card-img-overlay">
+								<h3 class="card-title">Mission Statement</h3>
+								<hr class="card-line">
+      							<p class="card-text">At CNY Gym Centre, our mission is to help each gymnast reach their full potential as a gymnast and as a person.  We treat each athlete as an individual doing our best to foster confidence and lasting self-esteem.  We strive to provide a safe and quality gymnastics program that will have an important and positive impact in your child’s future.  We are not only committed to helping each child become the best gymnast they can possible be, but also helping her/him become a happy, healthy and responsible person.  We believe that gymnastics is a vehicle in which we can teach skills that will last a lifetime, well beyond their gymnastics years.</p>
+								<br>
+								<a href="#" class="btn btn-primary">Learn More</a>
+    						</div>
+						</a>
+  					</div>
+					<div class="card">
+						<a href="#">
+    						<img src="css/img/vision.jpg" class="card-img" alt="Vision">
+    						<div class="card-img-overlay">
+								<h3 class="card-title">Vision</h3>
+								<hr class="card-line">
+      							<p class="card-text">With over 30 years of experience, we've become one of the top gymnastics clubs in New York state. We offer programs for children 6 months-18 years. Our programs range from Baby Gym and Parent and Tot to our birthday parties, summer camps, and our high performing teams. Whatever you sign up for, you can always expect that students will be taught in a fun, safe, and positive environment. Here, your child will gain new skills, learn life lessons, make great friends, and become a part of a close community like no other.</p>
+								<br>
+								<a href="#" class="btn btn-primary">Learn More</a>
+    						</div>
+						</a>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+
+<!---- Features Section ---->
+<section class="features-section">
+	<div class="container">
+		<div class="heading">
+			<h1>Learn More About CNY Gymnastics Centre</h1>
+			<hr>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-lg-4">
+				<div class="card border-0 transform-on-hover">
+					<a href="#">
+						<img src="css/img/background7.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5>Schedule</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="card border-0 transform-on-hover">
+					<a href="#">
+						<img src="css/img/background.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5>Team</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-4">
+				<div class="card border-0 transform-on-hover">
+					<a href="#">
+						<img src="css/img/background10.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5>Upcoming Events</h5>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="css/img/Logo/logo-footer.png">
+				<hr class="light">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">About Us</a>
+					</li>
+					<li>
+						<a href="#">Classes</a>
+					</li>
+					<li>
+						<a href="#">Schedule</a>
+					</li>
+					<li>
+						<a href="#">Birthdays</a>
+					</li>
+					<li>
+						<a href="#">Camps</a>
+					</li>
+					<li>
+						<a href="#">Team</a>
+					</li>
+					<li>
+						<a href="#">Upcoming Events</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Shoppingtown</h5>
+				<hr class="light">
+				<p>3649 Erie Boulevard East DeWitt, NY 13214</p>
+				<p>( 315 ) 437 - 4535</p>
+				<p>Mon &amp; Fri: &nbsp; 1:00&nbsp;pm - 7:30&nbsp;pm</p>
+				<p>Tue - Th: &nbsp; 10:00&nbsp;am - 7:30&nbsp;pm</p>
+				<p>Sat: &nbsp; 9:00&nbsp;am - 4:30&nbsp;pm</p>
+				<p>Sun: &nbsp; Closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Great Northern</h5>
+				<hr class="light">
+				<p>4155 State Highway 31 Clay, NY 13041</p>
+				<p>( 315 ) 622 - 4600</p>
+				<p>Mon - Fri: &nbsp; 10:00&nbsp;am - 9:00&nbsp;pm</p>
+				<p>Sat: &nbsp; 10:00&nbsp;am - 9:00&nbsp;pm</p>
+				<p>Sun: &nbsp; 11:00&nbsp;am - 6:00&nbsp;pm</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; cnygymcentre.com</h5>
+			</div>
+		</div>	
+	</div>
+</footer>
