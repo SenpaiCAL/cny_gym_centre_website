@@ -340,12 +340,39 @@ html, body {
 }
 
 /****************************************************************************/
-/********************************* Calendar *********************************/
+/********************************* Schedule *********************************/
 /****************************************************************************/
 
+.main-schedule {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background10.jpg);
+	min-height: 60vh;
+	background-size: cover;
+	background-position: center;
+	padding: 270px 0 130px;
+    background-attachment: fixed;
+}
 
+.main-schedule h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.6em;
+	color: #dcdde1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
+.schedule .nav a {
+	color: #ADE75F;
+}
 
+.schedule .nav a.active {
+	color: #71D002;
+}
+
+.schedule .responsive-table tr a {
+	color: #71D002;
+}
 
 /***************************************************************************/
 /********************************** Staff **********************************/
