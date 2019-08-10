@@ -338,7 +338,6 @@ html, body {
 .mission-vision .card:focus .card-img {
 	opacity:0.5;
 }
-
 /****************************************************************************/
 /********************************* Schedule *********************************/
 /****************************************************************************/
@@ -362,12 +361,18 @@ html, body {
 	font-weight: bold;
 }
 
-.schedule .nav a {
-	color: #ADE75F;
+.schedule .nav-tabs a {
+	margin-left: 1px;
 }
 
-.schedule .nav a.active {
-	color: #71D002;
+.schedule .nav li a {
+	background-color: #ADE75F;
+	color: #fff;
+}
+
+.schedule .nav li a.active {
+	background-color: #71D002;
+	color: #fff;
 }
 
 .schedule .responsive-table tr a {
