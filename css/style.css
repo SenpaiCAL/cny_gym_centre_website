@@ -342,7 +342,7 @@ html, body {
 	text-decoration: none !important;
 }
 
-.mission-vision .card-title, .card-text {
+.mission-vision .card-title, .mission-vision.card-text {
 	color: white;
 }
 
@@ -676,11 +676,11 @@ footer a:hover {
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-	
+
 }
 
 @media (max-width: 576px) {
 	.mission-vision {
-		
+
 	}
 }
